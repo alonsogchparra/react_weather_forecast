@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DayBoard from './DayBoard';
+import WeatherGraph from './WeatherGraph';
 import { url } from '../keys';
 
 class MainView extends Component {
@@ -44,6 +45,7 @@ class MainView extends Component {
         <div className="row justify-content-center">
           {this.showDayBoard()}
         </div>
+        <WeatherGraph daysData={daysData} />
       </div>
     )
   }
